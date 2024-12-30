@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/data/data.dart';
 import 'package:portfolio/screens/widgets/project_widget.dart';
@@ -54,9 +55,23 @@ class HomeScreen extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: SizedBox(
-                    width: 60,
-                    height: 60,
-                    child: Image(image: AssetImage((imagePath))),
+                    width: 300,
+                    height: 90,
+                    child: Column(
+                      children: [
+                        Image(image: AssetImage((imagePath))),
+                       
+
+ Center(
+          child: HtmlWidget(
+            textStyle: TextStyle(color: Colors.black),
+            '<a target="_blank" style="color:black" href="https://icons8.com/icon/42763/book">Book</a> icon by <a target="_blank" style="color:black" href="https://icons8.com">Icons8</a>'),
+        ),
+
+                         
+                               
+                      ],
+                    ),
                   ),
                 ),
               ),
