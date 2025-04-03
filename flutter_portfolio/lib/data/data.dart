@@ -5,8 +5,8 @@ import 'package:portfolio/models/project_model.dart';
 Color kGradient1 = const Color.fromARGB(255, 8, 45, 120);
 Color kGradient2 = const Color.fromARGB(255, 64, 191, 255);
 
+String imagePath2 = "assets/images/bookImage2.png";
 String imagePath = "assets/images/bookImage.png";
-
 //String data to modify
 String name = "LiteraryLabs";
 

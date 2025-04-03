@@ -54,18 +54,25 @@ class HomeScreen extends StatelessWidget {
                 alignment: Alignment.bottomCenter,
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
-                  child: SizedBox(
+                  child: Container(
+                    //  decoration: BoxDecoration(border: Border.all(color: Colors.blueAccent)),
                     width: 300,
-                    height: 90,
+                    height: 80,
                     child: Column(
                       children: [
-                        Image(image: AssetImage((imagePath))),
+                        Container(
+//decoration: BoxDecoration(border: Border.all(color: Colors.red)),
+                          child: Image(
+                 
+                      
+                            image: AssetImage((imagePath))),
+                        ),
                        
 
  Center(
           child: HtmlWidget(
-            textStyle: TextStyle(color: Colors.black),
-            '<a target="_blank" style="color:black" href="https://icons8.com/icon/42763/book">Book</a> icon by <a target="_blank" style="color:black" href="https://icons8.com">Icons8</a>'),
+            textStyle: TextStyle(color: Colors.black,fontSize: 10),
+            '<a target="_blank" style="color:black" href="https://icons8.com/icon/42763/book">Book Icon</a> <br> by <a target="_blank" style="color:black" href="https://icons8.com">Icons8</a>'),
         ),
 
                          
